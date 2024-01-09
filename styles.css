@@ -1,0 +1,336 @@
+:root {
+    --white: #f1f1f1;
+    --black: #1e1e1e;
+    --primary: #5D66B1;
+    --secondary: #96CDDA;
+    --accent: #9A7AD0;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --radius: 10px;
+    --radius-btn: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 21px;
+  background-color: #ebebeb;
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.33em;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 0;
+  padding-top: 0;
+  color: var(--primary);
+}
+
+p, ul, li {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+span {
+    font-weight: bold;
+}
+
+.section {
+    background-color: var(--white);
+    margin: 1.5em 3em;
+    box-shadow: var(--shadow);
+    padding: 1em 3em;
+    border-radius: var(--radius);
+}
+
+a {
+  color: var(--primary);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75em 1.25em;
+  margin-right: 0.5em;
+  font-size: 16px;
+  font-weight: 200;
+  border: none;
+  border-radius: var(--radius-btn);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mt1-5 {
+  margin-top: 1.5em;
+}
+
+/*Navigation bar*/
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  width: 100%;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5em;
+}
+
+.nav-bar a {
+  display: flex;
+  color: var(--black);
+  height: 100%;
+  padding: 0em 1.5em;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: all 0.5s ease;
+}
+
+.nav-bar .hamburger-menu {
+  display: none;
+}
+
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: #444;
+  border-bottom: 2px solid var(--black);
+}
+
+.m-nav-hidden {
+  display: none;
+}
+
+  /*Nav bar za mobilne telefone*/
+    @media screen and (max-width: 700px) {
+        .nav-bar {
+          margin-bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: right;
+        }
+
+        .nav-bar a {
+          display: none;
+        }
+        
+        .nav-bar .hamburger-menu {
+          display: flex;
+        }
+        
+        .m-nav-hidden {
+          display: none;
+          height: 0;
+          transition: all 1s ease;
+        }
+
+        .m-nav {
+          position: fixed;
+          top: 0;
+          z-index: 999;
+          display: flex;
+          background-color: var(--white);
+          overflow: hidden;
+          flex-direction: column;
+          height: 18em;
+          width: 100%;
+          box-shadow: var(--shadow);
+          margin-bottom: 1.5em;
+          transition: all 1s ease;
+        }
+
+        .m-nav a {
+          display: flex;
+          color: var(--black);
+          height: 100%;
+          padding: 0em 1.5em;
+          justify-content: right;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          font-size: 0.8em;
+          transition: all 0.5s ease;
+        }
+
+      .m-nav a:hover {
+        background-color: #ddd;
+        color: #444;
+      }
+    }
+
+
+/*Autor*/
+
+.author {
+  display: flex;
+  margin: 1.5em 3em;
+  padding-top: 3em;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.author-info {
+  margin-left: 1em;
+}
+
+.author-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.author-info span {
+  font-size: larger;
+}
+
+.author-info .datum {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+/*Uvod*/
+
+.uvod {
+  margin-top: 0.5em;
+}
+
+/*Prvi box z osnovnimi pojmi*/
+
+.pojmi .pojem {
+  display: flex;
+  flex-direction: row;
+}
+
+.pojmi .icon {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-content: center;;
+}
+
+.pojem img {
+  width: 80%;
+  max-width: 90px;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.pojmi .txt {
+  width: 70%;
+}
+
+/*Drugi box s primeri*/
+
+.primeri h1 {
+  margin-bottom: 0;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-image: url(assets/bandersnatch-base.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reset {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.bandersnatch-buttons {
+  display: flex;
+  height: 17%;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+.bandersnatch-buttons button {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  transform: all 0.5 ease;
+}
+
+.bandersnatch-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.vir {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+.interactive i {
+  color: white;
+  mix-blend-mode: difference;
+  transition: all 0.5 ease;
+}
+
+.interactive i:hover {
+  opacity: 0.8;
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.video-box iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*Kviz*/
+
+.h5p-box iframe {
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+}

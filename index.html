@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt pri predmetu Interaktivni sistemi 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <header>
+        <nav id="navBar">
+            <div class="nav-bar">
+                <a href="#uvod" class="desktop">Uvod</a>
+                <a href="#pojmi" class="desktop">Pojmi</a>
+                <a href="#primeri" class="desktop">Primeri</a>
+                <a href="#preizkus" class="desktop">Preizkus</a>
+                <a href="#povzetek" class="desktop">Povzetek</a>
+                <a href="" class="hamburger-menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="m-nav-hidden" id="mNav">
+                <a href=""></a>
+                <a href="#uvod">Uvod</a>
+                <a href="#pojmi">Pojmi</a>
+                <a href="#primeri">Primeri</a>
+                <a href="#preizkus">Preizkus</a>
+                <a href="#povzetek">Povzetek</a>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <div class="author">
+        <div class="avatar"><img src="assets/avatar-img.jpg" alt="" class="avatar"></div>
+        <div class="author-info">
+            <p><span>Tine Mikuš</span></p>
+            <p class="datum">6. 1. 2023</p>
+        </div>
+    </div>
+    <div class="section uvod" id="uvod">
+        <h1>Uvod</h1>
+        <p>
+            Novi pristopi v dojemanju filma se razvijajo, saj interaktivni sistemi za film odpirajo vrata drugačnim
+            izkušnjam. Ti sistemi omogočajo gledalcem bolj aktivno vlogo pri spremljanju filmov, kar presega klasično
+            pasivno gledalsko izkušnjo. V nadaljevanju bomo raziskali štiri inovativne interaktivne sisteme, ki ponujajo
+            gledalcem možnost sodelovanja in interakcije s filmsko vsebino na način, ki presega tradicionalno
+            opazovanje. Vsak sistem predstavlja svoj edinstven pristop k temu, kako lahko gledalci postanejo bolj
+            vpleteni v filmsko izkušnjo, kar omogoča novo perspektivo pri dojemanju filmske umetnosti.
+        </p>
+    </div>
+
+    <div class="section pojmi" id="pojmi">
+        <h1>Osnovni pojmi</h1>
+        <div class="pojem">
+            <div class="icon"><img src="assets/SVG/linear.svg" alt="Icon of a linear story." class="rotate90"></div>
+            <div class="txt">
+                <p><span>Linearni film</span> je klasična oblika filma, kjer je narativa fiksna in na njo ni moč
+                    vplivati z
+                    našimi interakcijami.</p>
+                <p><span>Linearna video-igra</span> je oblika sodobnega medija, kjer uporabnik s svojimi interakcijami
+                    sledi
+                    predeterminirani zgodbi in nanjo ne mora bistveno vplivati.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="pojem">
+            <div class="icon"><img src="assets/SVG/branching.svg" alt="Icon of a branching story." class="rotate90">
+            </div>
+            <div class="txt">
+                <p><span>Razvejitev</span> Razvejitev (Branching) je vrsta interakcije, kjer uporabnik s svojo izbiro
+                    spremeni
+                    potek prihajajočih dogodkov.</p>
+                <p><span>Razvejitvena narativa</span> Razvejitvena narativa je vrsta pripovedovanja zgodbe, kjer
+                    uporabnik z
+                    interakcijami sam izbira potek zgodbe.</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="pojem">
+            <div class="icon"><img src="assets/SVG/mouse-pointer.svg" alt="Icon of a mouse pointer."
+                    style="width: 40%; max-width: 70px;">
+            </div>
+            <div class="txt">
+                <p><span>Interaktivni film</span> je oblika sodobnega medija, kjer zgodba poteka ne-linearno. Uporabnik
+                    si ob
+                    razvejitvah sam izbira narativo. Podvrsti interaktivnega filma sta filmska video-igra in
+                    interaktivni kino.
+                </p>
+                <p>Pri <span>interaktivnem kinu</span> gre za obliko filma, kjer potek zgodbe ob razvejitvah izbira
+                    gledalec sam
+                    glede na dane možnosti. ​</p>
+                <p><span>Filmska video-igra </span>poleg odločitev vnaša še samo igranje.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="section primeri" id="primeri">
+        <h1>Bandersnatch (2018)</h1>
+        <h3>Primer 1</h3>
+        <div class="txt">
+            <p>Ponazoritev možnosti interakcije iz filma Bandersnatch.</p>
+            <p>Klikni na 'Accept' ali 'Refuse' za odziv. Desno zgoraj je gumb za obnovitev, ki omogoča ponovno izbiranje
+                odziva.</p>
+        </div>
+        <div class="interactive">
+            <div class="box" id="box">
+                <div class="reset" onclick="resetImage()"><i class="fa-solid fa-arrow-rotate-left"></i></div>
+                <div class="bandersnatch-buttons">
+                    <button onclick="changeImage('assets/bandersnatch-1.gif')"></button>
+                    <button onclick="changeImage('assets/bandersnatch-2.gif')"></button>
+                </div>
+            </div>
+            <p><span class="vir">Vir: Bandersnatch. V: Tenor [dostopno na daljavo]. [citirano 4. 1. 2024]. Dostopno na
+                    svetovnem spletu: <a
+                        href="https://tenor.com/sl/search/bandersnatch-gifs"></a>&lt;https://tenor.com/search/bandersnatch&gt;.</span>
+            </p>
+            <ul>
+                <li>Film <span>Netflix</span> produkcije. <a href="https://www.netflix.com/si/title/80988062">Povezava
+                        &rarr;</a></li>
+                <li>Gledalci imajo nadzor pri izbiranju pomemnih življenskih odločitev glavnega junaka Stefana Butlerja.
+                </li>
+                <li>Ob vsaki razvejitvi imamo 2 možnosti za izbor (generalizirano izbor 'ja ali ne').</li>
+                <li>Odpira dilemo interaktivnih filmov; ali smo resnično v nadzoru?</li>
+            </ul>
+            <button class="btn" href="https://i.imgur.com/9T5iXyQ.jpeg">Diagram poteka</button>
+        </div>
+        <hr class="mt1-5">
+        <h1>Minecraft story mode (2016)</h1>
+        <h3>Primer 2</h3>
+        <ul>
+            <li>Interaktivni 'film' (Filmska video-igra) narejen po video-igri Minecraft.</li>
+            <li>Uporabnik vlogo glavnega junaka Jesse in ga pelje skozi zgodbo (se zanj odloča, ga upravlja ... ).</li>
+            <li>Za razliko od interaktivnega kina gre tu tudi za dejansko igranje (angl. <a
+                    href="https://www.dictionary.com/browse/gameplay">gameplay</a>).</li>
+        </ul>
+        <button class="btn">Steam</button> <button class="btn"
+            href="https://www.youtube.com/watch?t=10545&v=4EG2up-jcKM">Primer (YouTube)</button>
+        <img src="assets/story-mode.webp" alt="" style="width: 100%; margin-top: 1em;">
+        <p><span class="vir">Vir: Telltale Games. Minecraft: Story Mode – Season One. V: Open Critic [dostopno na
+                daljavo]. [citirano 4. 1. 2024]. Dostopno na
+                svetovnem spletu: <a
+                    href="https://opencritic.com/game/2255/minecraft-story-mode-season-one"></a>&lt;https://opencritic.com/game/2255/minecraft-story-mode-season-one&gt;.</span>
+        </p>
+        <hr class="mt1-5">
+        <h1>You vs. the Wild (2019)</h1>
+        <h3>Primer 3</h3>
+        <ul>
+            <li>Interaktivna avantura z Bear Grylls-om v glavni vlogi.</li>
+            <li>Netflix-ov prosto-dostopen interaktivni film na platformi YouTube.</li>
+        </ul>
+        <button class="btn" href="https://www.netflix.com/si/title/80227574">Netflix</button><button class="btn"
+            href="https://www.youtube.com/watch?v=VUj1PbvnHS4&t=7s">YouTube</button>
+        <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/VUj1PbvnHS4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="section h5p-box" id="preizkus">
+        <h1>Kviz (H5P)</h1>
+        <iframe src="https://is1giktm.splet.arnes.si/wp-admin/admin-ajax.php?action=h5p_embed&id=5" width="958"
+            height="657" frameborder="0" allowfullscreen="allowfullscreen" title="Kviz – Interaktivni film"></iframe>
+        <script src="https://is1giktm.splet.arnes.si/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js"
+            charset="UTF-8"></script>
+        <hr class="mt1-5">
+        <h1>Interaktivni film</h1>
+        <iframe src="https://is1giktm.splet.arnes.si/wp-admin/admin-ajax.php?action=h5p_embed&id=6" width="959"
+            height="601" frameborder="0" allowfullscreen="allowfullscreen"
+            title="Interaktivni video – Interaktivni film"></iframe>
+        <script src="https://is1giktm.splet.arnes.si/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js"
+            charset="UTF-8"></script>
+    </div>
+    <div class="section povzetek" id="povzetek">
+        <h1>Povzetek</h1>
+        <p>Za razlago miselnega vzorca klikni na znak '+'.</p>
+        <iframe src="https://is1giktm.splet.arnes.si/wp-admin/admin-ajax.php?action=h5p_embed&id=7" width="958" height="743" frameborder="0" allowfullscreen="allowfullscreen" title="Povzetek"></iframe><script src="https://is1giktm.splet.arnes.si/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+    </div>
+    <div class="section viri">
+        <h1>Viri in literatura</h1>
+        <ol>
+            <li>GIANNETTI, C., TAVERES, M., LUNEFELD, P., KOENITZ, H., SHAW, J. in MENDES DA SILVA, B. Forking paths –
+                Interactive film and media. Ured. B. Mendes da Silva in J.M. Neves Carrega. Faro : Universidade do
+                Algarve, Campus de Gambelas, 2021, str. 111.​
+
+            </li>
+            <li>Interactive film. V: Academic Accelerator : Encyclopedia [dostopno na daljavo]. [citirano 7. 11. 2023].
+                Dostopno na svetovnem spletu: &lt;https://academic-accelerator.com/encyclopedia/interactive-film&gt;.​
+
+            </li>
+            <li>RAMCHURN, R. Interactive cinema: how films could alter plotlines in real time by responding to viewers'
+                emotions. V: The Conversation [dostopno na daljavo]. Obnovljeno 20. 3. 2023 [citirano 7. 11. 2023].
+                Dostopno na svetovnem spletu:
+                &lt;https://theconversation.com/interactive-cinema-how-films-could-alter-plotlines-in-real-time-by-responding-to-viewers-emotions-200145&gt;.​
+
+            </li>
+            <li>Video-game writing and the sense of story writing. V: What agmes are [dostopno na daljavo]. Obnovljeno
+                3. 2. 211 [citirano 7. 11. 2023]. Dostopno na svetovnem spletu:
+                &lt;https://www.whatgamesare.com/2011/02/video-game-writing-and-the-sense-of-story-writing.html&gt;.​
+
+            </li>
+            <li>Bandersnatch Interactive GIF. V: Tenor [dostopno na daljavo]. Obnovljeno 1. 3. 2019 [citirano 7. 11.
+                2023]. Dostopno na svetovnem spletu:
+                &lt;https://tenor.com/view/bandersnatch-interactive-gif-13196900&gt;.​
+
+            </li>
+            <li>5 reasons for film industry to use interactive videos. V: Cinema 8 [dostopno na daljavo]. Obnovljeno 31.
+                1. 2020 [citirano 7. 11. 2023]. Dostopno na svetovnem spletu:
+                &lt;https://cinema8.com/blog/5-reasons-for-film-industry-to-use-interactive-videos&gt;.​
+
+                ​
+
+            </li>
+            <li> ROTH, C. in KOENITZ, H. Bandersnatch, Yea or Nay? Reception and User Experience of an Interactive
+                Digital Narrative Video. V: Research Gate [dostopno na daljavo]. Obnovljeno 15. 9. 2019 [citirano 2023.
+                11. 7]. Dostopno na svetovnem spletu:
+                &lt;https://shorturl.at/oqGV5&gt;.​
+
+            </li>
+            <li> Imgur [dostopno na daljavo]. Obnovljeno 28. 12. 2019 [citirano 7. 11. 2023]. Dostopno na svetovnem
+                spletu: &lt;https://imgur.com/9T5iXyQ&gt;.​
+
+            </li>
+            <li>HOLT, K. Interactive 'Minecraft' adventure is now available on Netflix. V: Engadget [dostopno na
+                daljavo]. Obnovljeno 8. 8. 2019 [citirano 7. 11. 2023]. Dostopno na svetovnem spletu:
+                &lt;https://www.engadget.com/2018-11-27-minecraft-story-mode-netflix.html&gt;.​
+
+            </li>
+            <li>Interactive film. V: Wikipedia [dostopno na daljavo]. [citirano 7. 11. 2023]. Dostopno na svetovnem
+                spletu: &lt;https://en.wikipedia.org/wiki/Interactive_film&gt;.​</li>
+
+            ​
+        </ol>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/47430b533a.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
