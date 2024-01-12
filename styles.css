@@ -128,6 +128,10 @@ a {
 
   /*Nav bar za mobilne telefone*/
     @media screen and (max-width: 700px) {
+        .section {
+          margin: 1em 1em;
+        }
+      
         .nav-bar {
           margin-bottom: 0;
           width: 100%;
@@ -333,4 +337,8 @@ a {
 .h5p-box iframe {
   border: 2px solid var(--primary);
   border-radius: var(--radius);
+}
+
+.viri {
+  overflow: hidden;
 }
