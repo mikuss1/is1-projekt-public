@@ -187,8 +187,16 @@ a {
       }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 700px) {
+      .pojmi .pojem {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 2fr !important;
+      }
 
+      .pojmi .pojem .icon {
+        margin: 0;
+      }
     }
 
 /*Autor*/
@@ -240,6 +248,7 @@ a {
 
 .pojmi .icon {
   display: flex;
+  margin: 2em 0em;
   justify-content: center;
   align-content: center;;
 }
@@ -250,6 +259,7 @@ a {
 
 .rotate90 {
   transform: rotate(90deg);
+  margin: 2em;
 }
 
 .pojmi .txt {
