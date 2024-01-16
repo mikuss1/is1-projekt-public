@@ -345,9 +345,8 @@ a {
   font-weight: 500;
   color: var(--primary);
   text-decoration: underline;
+  transition: all 0.5s ease;
 }
-
-
 
 .pop-up-window {
   display: none;
@@ -360,6 +359,18 @@ a {
   overflow: hidden;
   padding: 1em 2em;
   z-index: 9999;
+}
+
+@media screen and (max-width: 700px) {
+  .pop-up-window {
+    width: 66%;
+  }  
+}
+
+@media screen and (max-width: 480px) {
+  .pop-up-window {
+    width: 100%;
+  }  
 }
 
 .pop-up-img {
@@ -378,7 +389,7 @@ a {
   display: block;
 }
 
-.pop-p:hover {
+.pop-up:hover {
   color: var(--black)
 }
 
